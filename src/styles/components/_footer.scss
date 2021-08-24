@@ -1,0 +1,19 @@
+footer {
+  border-top: 8px solid $black;
+  padding: 16px;
+}
+
+.footer {
+
+  &-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-text {
+    font-family: $font-primary;
+    font-size: 28px;
+    text-align: center;
+  }
+}

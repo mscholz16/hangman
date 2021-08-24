@@ -1,0 +1,83 @@
+.word {
+
+  &-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto auto 32px;
+    max-width: $max-width-desktop;
+  }
+
+  &-container {
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 80px;
+    justify-content: center;
+    margin: 5px;
+    position: relative;
+    transition: $transition-fast;
+    width: 80px;
+
+    &::after {
+      background: $black;
+      border-radius: 5px;
+      bottom: 15%;
+      content: '';
+      position: absolute;
+      height: 8px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: $transition-fast;
+      width: 90%;
+    }
+
+    &:hover::after {
+      background: $white;
+    }
+
+    &:hover {
+      background: $black;
+
+      .word-text {
+        color: $white;
+      }
+    }
+
+    &.valid {
+
+      &:hover::after {
+        background: $green;
+      }
+
+      &:hover {
+
+        .word-text {
+          color: $green;
+        }
+      }
+    }
+
+    &.invalid {
+
+      &:hover::after {
+        background: $red;
+      }
+
+      &:hover {
+
+        .word-text {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  &-text {
+    font-family: $font-primary;
+    font-size: 64px;
+    text-transform: uppercase;
+    transition: $transition-fast;
+  }
+}

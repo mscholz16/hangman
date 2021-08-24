@@ -1,0 +1,199 @@
+.dark {
+
+  &.body-container {
+    background: $black;
+  }
+
+  &.header {
+
+    &-all {
+      border-bottom: 8px solid $white;
+
+      .header-circle {
+        background: $white;
+      }
+
+      .header-text {
+        color: $white;
+
+        &:active {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  &.param {
+
+    .lightning {
+
+      &-container {
+        border: 2px solid $white;
+      }
+
+      &-text {
+        color: $white;
+      }
+    }
+
+    .lang {
+
+      &-container {
+        border: 2px solid $white;
+      }
+
+      &-text {
+        color: $white;
+
+        &::after {
+          background: $white;
+        }
+
+        &.active {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &.start-all {
+
+    .start-container {
+      border: 2px solid $white;
+
+      &:hover {
+        background: $white;
+
+        .start-text {
+          color: $black;
+        }
+      }
+    }
+
+    .start-text {
+      color: $white;
+    }
+  }
+
+  &.quote-container {
+
+    .quote-text {
+      color: $white;
+    }
+  }
+
+  &.draw-container {
+    border: 4px solid $white;
+
+    span {
+      background: $white;
+
+      &.white {
+        background: $black;
+        border: 4px solid $white;
+      }
+    }
+  }
+
+  &.word-all {
+
+    .word-container {
+
+      &::after {
+        background: $white;
+      }
+
+      &:hover::after {
+        background: $black;
+      }
+
+      &:hover {
+        background: $white;
+
+        .word-text {
+          color: $white;
+        }
+      }
+
+      .word-text {
+        color: $white;
+      }
+
+      &.valid {
+
+        &:hover::after {
+          background: $green;
+        }
+
+        &:hover {
+
+          .word-text {
+            color: $green;
+          }
+        }
+      }
+
+      &.invalid {
+
+        &:hover::after {
+          background: $red;
+        }
+
+        &:hover {
+
+          .word-text {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
+  &.letter-all {
+
+    .letter-container {
+      border: 2px solid $white;
+
+      &:hover {
+        background: $white;
+
+        .letter-text {
+          color: $black;
+        }
+      }
+
+      &.valid {
+        border: 2px solid $green;
+        cursor: not-allowed;
+
+        .letter-text {
+          color: $green;
+        }
+      }
+
+      &.invalid {
+        border: 2px solid $red;
+        cursor: not-allowed;
+
+        .letter-text {
+          color: $red;
+        }
+      }
+    }
+
+    .letter-text {
+      color: $white;
+    }
+  }
+
+  &.footer {
+
+    &-all {
+      border-top: 8px solid $white;
+
+      .footer-text {
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.letter {
+
+  &-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto auto 32px;
+    max-width: $max-width-tablet;
+  }
+
+  &-container {
+    align-items: center;
+    border: 2px solid $black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 64px;
+    justify-content: center;
+    margin: 5px;
+    transition: $transition-fast;
+    width: 64px;
+
+    &:hover {
+      background: $black;
+
+      .letter-text {
+        color: $white;
+      }
+    }
+
+    &.valid {
+      border: 2px solid $green;
+      cursor: not-allowed;
+
+      .letter-text {
+        color: $green;
+      }
+    }
+
+    &.invalid {
+      border: 2px solid $red;
+      cursor: not-allowed;
+
+      .letter-text {
+        color: $red;
+      }
+    }
+  }
+
+  &-text {
+    font-family: $font-primary;
+    font-size: 32px;
+    text-transform: uppercase;
+    transition: $transition-fast;
+  }
+}

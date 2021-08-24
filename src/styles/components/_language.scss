@@ -1,0 +1,40 @@
+.lang {
+
+  &-container {
+    align-items: center;
+    border: 2px solid $black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  &-text {
+    font-family: $font-primary;
+    font-size: 12px;
+    padding: 8px;
+    position: relative;
+
+    &::after {
+      background: $red;
+      border-radius: 5px;
+      bottom: 20%;
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 50%;
+      opacity: 0;
+      transform: translate(-50%, 50%);
+      transition: $transition-fast;
+      width: 85%;
+    }
+
+    &.active {
+      color: $red;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

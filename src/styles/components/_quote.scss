@@ -1,0 +1,17 @@
+.quote {
+
+  &-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  &-text {
+    font-family: $font-primary;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,21 @@
+* {
+
+  &::selection {
+    background: $black;
+    color: $white;
+  }
+}
+
+body {
+  background: $black;
+}
+
+.body {
+
+  &-container {
+    background: $white;
+    margin: auto;
+    min-width: $min-width-mobile;
+    max-width: $max-width-desktop;
+  }
+}
